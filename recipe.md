@@ -12,7 +12,7 @@ _Include the initializer, public properties, and public methods with all paramet
 
 ```python
 # EXAMPLE
-bedbsf
+
 class Reminder:
     # User-facing properties:
     #   name: string
@@ -49,30 +49,70 @@ _Make a list of examples of how the class will behave in different situations._
 # EXAMPLE
 
 """
-Given a name and a task
-#remind reminds the user to do the task
+Test that class initiates with an empty list
 """
-reminder = Reminder("Kay")
-reminder.remind_me_to("Walk the dog")
-reminder.remind() # => "Walk the dog, Kay!"
 
 """
-Given a name and no task
-#remind raises an exception
+Test add_new works with adding an item
+and returns the same list
 """
-reminder = Reminder("Kay")
-reminder.remind() # raises an error with the message "No task set."
+
 
 """
-Given a name and an empty task
-#remind still reminds the user to do the task, even though it looks odd
+Test add_new works with multiple items
+and returns the same list
 """
-reminder = Reminder("Kay")
-reminder.remind_me_to("")
-reminder.remind() # => ", Kay!"
-```
 
-_Encode each example as a test. You can add to the above list as you go._
+"""
+Test get_most_often returns no clear winner
+for starting list [apple, cherry, pineapple]
+"""
+
+
+"""
+Test get_most_often returns clear winner of cherry
+for starting list [apple, cherry, cherry, pineapple]
+"""
+
+
+"""
+Test get_most_often returns clear winner of pineapple
+for starting list [apple, cherry, cherry, pineapple, pineapple, pineapple]
+"""
+
+
+"""
+Test get_most_often returns clear winner of pineapple
+for starting list [apple, pineapple, cherry, pineapple, cherry, pineapple]
+"""
+
+"""
+Test get_most_often returns clear winner of 4
+for starting list [1, 2, 3, 4, 4]
+"""
+
+"""
+Test get_most_often returns no clear winner
+for starting list [1, 2, 3, 4]
+"""
+
+"""
+Test get_most_often returns clear winner of True
+for starting list [True, True, False]
+"""
+
+"""
+Test get_most_often returns no clear winner
+for starting list [True, True, False, False]
+"""
+
+"""
+Test get_most_often returns clear winner of pineapple
+for starting list [apple, pineapple, cherry, 1, 2, pineapple, True, False, cherry, pineapple]
+"""
+
+
+
 
 ## 4. Implement the Behaviour
 
