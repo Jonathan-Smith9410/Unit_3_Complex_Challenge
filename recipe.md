@@ -77,12 +77,6 @@ for starting list [apple, cherry, cherry, pineapple]
 
 """
 Test get_most_often returns clear winner of pineapple
-for starting list [apple, cherry, cherry, pineapple, pineapple, pineapple]
-"""
-
-
-"""
-Test get_most_often returns clear winner of pineapple
 for starting list [apple, pineapple, cherry, pineapple, cherry, pineapple]
 """
 
